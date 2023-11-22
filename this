@@ -1,0 +1,5 @@
+r.POST("/branch", handler.AuthMiddleware(), handler.CreateBranch)
+r.GET("/branch/:id", handler.AuthMiddleware(), handler.GetByIdBranch)
+r.GET("/branch", handler.GetListBranch)
+r.PUT("/branch/:id", handler.AuthMiddleware(), handler.UpdateBranch)
+r.DELETE("/branch/:id", handler.AuthMiddleware(), handler.DeleteBranch)
